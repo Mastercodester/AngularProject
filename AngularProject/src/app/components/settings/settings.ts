@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './settings.css'
 })
 export class Settings {
+  
 
 }
+
