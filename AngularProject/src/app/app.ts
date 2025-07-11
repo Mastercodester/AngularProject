@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Settings } from './components/settings/settings';
+import { appclocks } from './components/clocks/clocks';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Settings,appclocks],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,25 +1,24 @@
 //import { Component } from '@angular/core';
-
-
-export class Clocks {
-
-}
 import { Component, OnInit, OnDestroy } from '@angular/core';
+
+
+
+
 
 @Component({
   selector: 'app-clock',
   templateUrl: './clocks.html',
-  styleUrls: ['./clock.component.css']
+  styleUrl: './clocks.css'
 })
-export class ClockComponent implements OnInit, OnDestroy {
+export class appclocks {
   intervalId: ReturnType<typeof setInterval> | undefined;
   hourDeg = 0;
   minuteDeg = 0;
-  secondDeg = 0;
+ secondDeg = 0;
 
   ngOnInit(): void {
     this.updateClock();
-    this.intervalId = setInterval(() => this.updateClock(), 1000);
+   this.intervalId = setInterval(() => this.updateClock(), 1000);
   }
 
   updateClock(): void {
