@@ -1,0 +1,24 @@
+<p>clcok-forum works!</p>
+<!--<div class="DigitalClock">
+    <h1>Digital Clock</h1>
+  
+    <h2>Settings</h2>
+  
+  </div>
+  
+  <div class = "DayTitle">
+  
+  </div>
+  
+  <div >   Hour </div>
+  <div >   Minute</div>
+  <div >   Seconds</div>
+-->
+
+  <p> Timezoness:  {{TimezonePick}}</p>
+
+<select name="TimezonePick" [(ngModel)]="TimezonePick">
+    @for (f of Timezones;  track $index ) {
+        <option [value]="f">{{f}}</option>
+    }
+</select>
